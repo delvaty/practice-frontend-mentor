@@ -181,11 +181,11 @@ td > p {
   }
 
   table {
-    width: 90%; /* Ajusta el ancho de la tabla en pantallas más pequeñas */
+    width: 90%; 
   }
 
   tr::after {
-    width: 100%; /* El borde inferior será 100% del ancho de la fila */
+    width: 100%; 
   }
 }
 
@@ -199,11 +199,11 @@ td > p {
   }
 
   table {
-    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+    width: 100%; 
   }
 
   tr::after {
-    width: 100%; /* Mantén el borde inferior responsivo */
+    width: 100%; 
   }
 }
 
