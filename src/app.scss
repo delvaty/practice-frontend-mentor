@@ -51,6 +51,32 @@ body {
   font-weight: 700;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+  
+}
+
+.ant-card {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card img {
+  border-radius: 10px;
+  width: 100%; 
+  height: auto;
+}
+
 .prep-time {
   background-color: hsl(330, 100%, 98%);
   font-size: 12px;
@@ -108,8 +134,8 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 80%; /* Ajusta el ancho de la tabla */
-  margin: 20px auto; /* Centra la tabla horizontalmente */
+  width: 80%; 
+  margin: 20px auto; 
 }
 
 tr {
@@ -135,5 +161,49 @@ td {
 td > p {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .ant-card {
+    max-width: 90%; 
+  }
+
+  .ant-card img {
+    max-width: 100%; 
+  }
+
+  .prep-time {
+    font-size: 10px; 
+  }
+
+  .list-text li {
+    margin-left: 20px; 
+  }
+
+  table {
+    width: 90%; /* Ajusta el ancho de la tabla en pantallas más pequeñas */
+  }
+
+  tr::after {
+    width: 100%; /* El borde inferior será 100% del ancho de la fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-card {
+    max-width: 100%; 
+  }
+
+  .prep-time {
+    font-size: 9px; 
+  }
+
+  table {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  }
+
+  tr::after {
+    width: 100%; /* Mantén el borde inferior responsivo */
+  }
 }
 

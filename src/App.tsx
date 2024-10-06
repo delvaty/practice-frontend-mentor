@@ -10,25 +10,25 @@ function App() {
   const { Title, Text } = Typography;
   return (
     <>
-      <div
-        style={{
+      <div className="card-container"
+        /* style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
           padding: 20,
           width: "100vw",
-        }}
+        }} */
       >
-        <Card
-          style={{
+        <Card className="ant-card"
+          /* style={{
             maxWidth: 650,
             height: "auto",
             width: "100%",
             display: "flex",
             flexDirection: "column",
             borderRadius: 20,
-          }}
+          }} */
         >
           <img
             src={BackgroundImage}
